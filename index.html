@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCC</title>
+    <!-- Link to the CSS file (Lab 1 will focus on styling) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section (Lab 1) -->
+    <header>
+        <!-- Placeholder image for the profile picture -->
+        <img src="photo.jpg" alt="Avatar" width="150">
+        <h1>Periklis Chatzikyriakou</h1>
+        <h2>SOC Analyst • Programmer • Electrical Engineer</h2>
+        <h4><del>Welcome to my personal portfolio website!</del></h4>
+        <button id="theme-toggle" class="theme-float-btn">🌓</button>
+    </header>
+
+    <!-- About Me Section (Lab 1) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an Electrical and Computer Engineering student at the <b>University of Western Macedonia (UOWM)</b>,
+             driven by a strong passion for technology, innovation, and continuous learning. My academic foundation in electrical 
+             engineering has cultivated a deep interest in programming and the powerful intersection between hardware and software systems.</p>
+        <p>Through self-directed learning, I have developed proficiency in programming languages such as C,
+             Assembly, JavaScript, Java, and more, enhancing both my technical versatility and problem-solving skills.
+              In my current role as a<i> Security Operations Center (SOC) Analyst</i>, I apply my technical expertise to detect,
+               analyze, and mitigate security threats, while further refining my analytical mindset and attention to detail.</p>
+
+        </section>
+
+    <!-- Resume Section (Lab 1) -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Education and <ins>Certifications</ins></h3>
+        <ul>
+            <li>Vocational Lyceum of Neapolis (Technician of Electrical Installations, Devices and Networks, 2019-2022)</li>
+            <li>INE (Certified Cloud Associate Certificate 2025)</li>
+            <li>University of Western Macedonia (MSc in Electrical and Computer Engineering, Expected 2026)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Programming Languages: C, C++, x86 Assembly, Java, JavaScript, Autoit</li>
+            <li>Tools: Git, Visual Studio Code, Wireshark, Nmap, Elastic SIEM</li>
+            <li>Log Analysis: Windows Event Logs, Linux Syslogs, Firewall/IDS Logs, EDR Logs, DNS/HTTP logs</li>
+            <li>Cloud Platforms: AWS, GCP</li>
+            <li>Electrical Skills: Electrical installations and Wiring, Panel Assembly, PLC Programming</li>
+            <li>Languages: Greek (Native), English (C2)</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>SOC Analyst at CYGNUS TECHNOLOGIES (2024-Present)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section (Lab 1) -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>Kozani 2030: On the Path to Climate Neutrality</h3>
+        <p>Achieved First Place.</p>
+        <a href="https://climateneutral2030.cityofkozani.gov.gr/en/3rd-student-programming-competition-kozani-2030-climate-neutral-and-smart-city-axis-environment-and-energy/" target="_blank">View Details</a>
+
+        <h3>Jaylib-javapong</h3>
+        <p>A simple Java Pong game based on Raylib's Java Port JayLib.</p>
+        <a href="https://github.com/perhsch/Jaylib-javapong" target="_blank">View on GitHub</a>
+
+        <h3>AI Project: Grid Pathfinding</h3>
+        <p>A simple Java project that generates a 2D grid labyrinth and finds a path from a robot to one of multiple exits using three algorithms.</p>
+        <a href="https://github.com/perhsch/AI_project" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Contact Me Section (Lab 3) -->
+    <section id="contact">
+        <h3 class="h3 form-title">Contact Form</h3>
+    
+        <!-- Thank you message -->
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your message! I will get back to you soon.</p>
+        </div>
+    
+        <!-- Form setup for Netlify -->
+        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <input type="hidden" name="form-name" value="contactForm">
+    
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+    
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+    
+            <!-- Add the form-btn class here -->
+            <button class="form-btn" type="submit"> 
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer Section (Lab 1) -->
+    <footer>
+        <p>&copy; 2025 Periklis Chatzikyriakou</p>
+        <a href="https://www.linkedin.com/in/perhsch/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/perhsch" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- Σύνδεση με το αρχείο JavaScript -->
+    <script src="formValidation.js"></script>
+    <script>
+document.getElementById("theme-toggle").addEventListener("click", () => {
+    document.documentElement.classList.toggle("light");
+});
+</script>
+</body>
+</html>
