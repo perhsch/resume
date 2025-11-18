@@ -29,7 +29,9 @@
   --accent: #e8491d;
   --footer-bg: #35424a;
 }
-
+.hidden {
+  display: none;
+}
 /* General Styles (Lab 1) */
 body {
   font-family: system-ui, Arial, sans-serif;

@@ -86,18 +86,23 @@
         </div>
     
         <!-- Form setup for Netlify -->
-        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <form name="contactForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- REQUIRED hidden field -->
             <input type="hidden" name="form-name" value="contactForm">
-    
+
+            <!-- Honeypot (MUST exist & be invisible) -->
+            <p class="hidden">
+                <input name="bot-field">
+            </p>
+
             <div class="input-wrapper">
                 <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
                 <input type="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
-    
+
             <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-    
-            <!-- Add the form-btn class here -->
-            <button class="form-btn" type="submit"> 
+
+            <button class="form-btn" type="submit">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
             </button>
