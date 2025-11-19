@@ -68,6 +68,20 @@ header {
   background: var(--primary-dark);
 } 
 
+.map-container {
+    width: 100%;
+    max-width: 900px;       /* Adjust map maximum width */
+    margin: 40px auto;      /* Center it */
+    border-radius: 12px;    /* Rounded corners */
+    overflow: hidden;       /* Apply rounding to iframe */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;          /* Same height as before */
+    border: none;           /* Remove default border */
+}
 header h1 {
   margin: 0;
   font-size: clamp(2rem, 6vw, 3.5rem);
